@@ -1,0 +1,62 @@
+# --- Kaggle credentials / secrets ---
+kaggle.json
+.kaggle/
+.env
+*.env
+
+# --- Raw competition data (download from Kaggle instead) ---
+data/
+input/
+**/data/
+*.zip
+*.parquet
+*.feather
+*.npy
+*.npz
+*.h5
+*.hdf5
+*.jpg
+*.jpeg
+*.JPG
+*.png
+!assets/**/*.png
+*.tif
+*.tiff
+# Large CSVs: keep small submission files only (named submission*.csv or *_ensemble.csv)
+train*.csv
+test*.csv
+Training_labels*.csv
+ppm*.csv
+sample_submission.csv
+
+# --- Model checkpoints / weights ---
+*.pt
+*.pth
+*.ckpt
+*.bin
+*.safetensors
+*.onnx
+*.pkl
+*.joblib
+checkpoints/
+models/
+wandb/
+lightning_logs/
+
+# --- Notebook / Python cruft ---
+.ipynb_checkpoints/
+__pycache__/
+*.py[cod]
+
+# --- Virtual environments ---
+.venv/
+venv/
+env/
+.conda/
+
+# --- OS / editor ---
+.DS_Store
+Thumbs.db
+desktop.ini
+.vscode/
+.idea/
